@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guessing Game</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Guess the Number!</h1>
+    <div class="used-numbers-container">
+      <p>Numbers used:</p>
+      <div class="used-numbers"></div>
+    </div>
+    <div class="buttons-container">
+      <button id="start-game-btn">Start the Game</button>
+      <button id="restart-game-btn" class="display-none">Restart</button>
+      <button id="again-game-btn" class="display-none">Try again</button>
+      <p id="start-game-err" class="display-none">
+        Please choose the maximum number
+      </p>
+    </div>
+    <form class="form-max-number">
+      <label for="max"
+        >Please enter max number before starting the game, but not more than
+        200:</label
+      >
+      <input id="max" type="text" placeholder="Enter max number..." />
+      <button id="max-btn" type="submit">Apply</button>
+    </form>
+    <p class="number-of-attempts">Number of attempts: <span>0</span></p>
+    <p class="msg"></p>
+    <p class="number-container">?</p>
+    <form class="form-guess-number">
+      <input
+        id="guess"
+        class="display-none"
+        type="text"
+        placeholder="Guess the number..."
+      />
+      <button type="submit" id="guess-btn" class="display-none">GUESS</button>
+    </form>
+  </body>
+</html>
